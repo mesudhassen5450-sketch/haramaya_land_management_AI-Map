@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script>
+    (function () {
+      const theme = localStorage.getItem('haramaya-theme') || 'system';
+      const isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/ethiopia.png" />
+  <title>Haramaya LandTax - Land & Tax Management System</title>
+  <meta name="description"
+    content="Digital land registration, property valuation, and tax management system for Haramaya Wereda. Access government services online." />
+  <meta name="author" content="Haramaya Wereda" />
+  <meta name="keywords"
+    content="land registration, tax payment, property valuation, Haramaya, Ethiopia, government services" />
+
+  <meta property="og:title" content="Haramaya LandTax - Land & Tax Management" />
+  <meta property="og:description"
+    content="Digital land registration and tax management system for Haramaya Wereda citizens." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@HaramayaWereda" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
