@@ -50,9 +50,20 @@ import DocumentLibrary from "./pages/website/DocumentLibrary";
 import ZoningMap from "./pages/website/ZoningMap";
 import Transparency from "./pages/website/Transparency";
 
+import { MissingEnvScreen } from "@/components/MissingEnvScreen";
+
 const queryClient = new QueryClient();
 
 const App = () => {
+  const missingEnvs = [];
+  if (!import.meta.env.VITE_SUPABASE_URL) missingEnvs.push("VITE_SUPABASE_URL");
+  if (!import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY) missingEnvs.push("VITE_SUPABASE_PUBLISHABLE_KEY");
+  if (!import.meta.env.VITE_OPENAI_API_KEY) missingEnvs.push("VITE_OPENAI_API_KEY");
+
+  if (missingEnvs.length > 0) {
+    return <MissingEnvScreen missing={missingEnvs} />;
+  }
+
   const [lang, setLang] = useState('en');
 
   return (
