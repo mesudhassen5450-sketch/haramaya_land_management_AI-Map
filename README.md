@@ -1,3 +1,5 @@
+link((  https://haramayalandmanagement.netlify.app/  )))
+
 # Haramaya Land Management System (HLMS)
 
 The Haramaya Land Management System is a comprehensive digital platform designed for Haramaya Wereda and Sub-city administrations. It streamlines property tax assessment, land registration, GIS visualization, and citizen self-service.
