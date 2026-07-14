@@ -18,8 +18,6 @@
 
 ## 📋 Description
 
-## 📋 Description
-
 A comprehensive digital platform designed for **Haramaya Wereda and Sub-city** administrations in Ethiopia. The Haramaya Land Management System streamlines property tax assessment, land registration, GIS visualization, and citizen self-service with modern technology and bilingual support.
 
 ### ✨ Core Features
